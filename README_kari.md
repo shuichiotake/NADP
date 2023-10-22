@@ -15,9 +15,9 @@ This package is ??
 
 ??
  
-# Coders
+# Authors
  
-* Shuichi Otake, Tomoya Machide
+* Danushka Bollegala, Shuichi Otake, Tomoya Machide, Ken-ichi Kawarabayashi
  
 # License
  
