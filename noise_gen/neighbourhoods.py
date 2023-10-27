@@ -91,7 +91,7 @@ edge_data = dict(edge_data)
 for i, k in itertools.product(range(0,n),lower_bounds):
     edges[k][i] = edge_data[(i,k)]
 
-# -- adjustment -- If you use your original data, please comment out the following lines befor return.
+# -- adjustment -- If you use your original data, please comment out the lines 96 - 103.
     
 edges[0.1][29979].remove(edges[0.1][29979][-1])
 edges[0.1][40517].remove(edges[0.1][40517][-1])
