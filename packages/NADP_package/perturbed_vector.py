@@ -15,34 +15,34 @@ ut = UT()
 
 # -- load
 
-with open("../Data/ebd_mat.pkl", "rb") as f:
+with open("../noise_gen/data/ebd_mat.pkl", "rb") as f:
     ebd_mat = pickle.load(f)
 
-with open("../Data/num_voc_dict.pkl", "rb") as f:
+with open("../noise_gen/data/num_voc_dict.pkl", "rb") as f:
     num_voc_dict = pickle.load(f)
 
-with open("../Data/top_10_norm.pkl", "rb") as f:
+with open("../noise_gen/data/top_10_norm.pkl", "rb") as f:
     top_10_norm = pickle.load(f)
 
-with open("../Data/alpha_mod.pkl", "rb") as f:
+with open("../common/alpha_mod.pkl", "rb") as f:
     alpha = pickle.load(f)
 
-with open("../Data/sigma_mat.pkl", "rb") as f:
+with open("../common/sigma_mat.pkl", "rb") as f:
     sigma_mat = pickle.load(f)
 
-with open("../Data/voc_Delta_0.10.pkl", "rb") as f:
+with open("../common/voc_Delta_0.10.pkl", "rb") as f:
     voc_Delta_1 = pickle.load(f)
 
-with open("../Data/voc_Delta_0.20.pkl", "rb") as f:
+with open("../common/voc_Delta_0.20.pkl", "rb") as f:
     voc_Delta_2 = pickle.load(f)
 
-with open("../Data/voc_Delta_0.30.pkl", "rb") as f:
+with open("../common/voc_Delta_0.30.pkl", "rb") as f:
     voc_Delta_3 = pickle.load(f)
 
-with open("../Data/voc_Delta_0.40.pkl", "rb") as f:
+with open("../common/voc_Delta_0.40.pkl", "rb") as f:
     voc_Delta_4 = pickle.load(f)
 
-with open("../Data/voc_Delta_0.50.pkl", "rb") as f:
+with open("../common/voc_Delta_0.50.pkl", "rb") as f:
     voc_Delta_5 = pickle.load(f)
 
 # -- definition of noise_generattion functions

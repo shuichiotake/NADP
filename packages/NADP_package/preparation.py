@@ -14,7 +14,7 @@ from multiprocessing import Pool
 with open("../common/vocKebds_benchmark_TW_73404.pkl", "rb") as f:
     vocs_ebd_dict_73404 = pickle.load(f)
 
-with open("../Data/vocs_ebd_dict_10593.pkl", "rb") as f:
+with open("../common/vocs_ebd_dict_10593.pkl", "rb") as f:
     vocs_ebd_dict_10593 = pickle.load(f)
 
 # --definition of functions
@@ -38,11 +38,11 @@ def preparation():
         voc_num_dict[voc] = i
         num_vec_list.append(vec)
     W = np.array(num_vec_list).T
-    with open("../Data/num_voc_dict.pkl","wb") as f:
+    with open("../noise_gen/data/num_voc_dict.pkl","wb") as f:
         pickle.dump(num_voc_dict,f)
-    with open("../Data/voc_num_dict.pkl","wb") as f:
+    with open("../noise_gen/data/voc_num_dict.pkl","wb") as f:
         pickle.dump(voc_num_dict,f)
-    with open("../Data/ebd_mat.pkl","wb") as f:
+    with open("../noise_gen/data/ebd_mat.pkl","wb") as f:
         pickle.dump(W,f,protocol=4)
     domain = itertools.product(range(0,n),[W])
     with Pool(32) as pool:
@@ -50,15 +50,15 @@ def preparation():
         top_k_dict = dict(top_k_tuples)
         top_k_index_dict = {i:[x[0] for x in top_k_dict[i]] for i in range(0,n)}
         top_k_norm_dict = {num_voc_dict[i]:[x[1] for x in top_k_dict[i]] for i in range(0,n)}
-    with open("../Data/top_10.pkl", "wb") as f:
+    with open("../noise_gen/data/top_10.pkl", "wb") as f:
         pickle.dump(top_k_index_dict,f)
-    with open("../Data/top_10_norm.pkl", "wb") as f:
+    with open("../noise_gen/data/top_10_norm.pkl", "wb") as f:
         pickle.dump(top_k_norm_dict,f)
     W = np.array(list(vocs_ebd_dict_10593.values())).T
     s_c_mat = np.cov(W)
     s_s_c_mat = (300/np.trace(s_c_mat))*s_c_mat
     M = scipy.linalg.sqrtm(s_s_c_mat)
-    with open("../Data/sigma_mat.pkl", "wb") as f:
+    with open("../common/sigma_mat.pkl", "wb") as f:
         pickle.dump(M,f)
     alpha = dict()
     def Bf(e,u):
@@ -121,7 +121,7 @@ def preparation():
         return u
     for e in [i/10 for i in range(1,401)]:
         alpha[e] = B(e)
-    with open("../Data/alpha_mod.pkl", "wb") as f:
+    with open("../common/alpha_mod.pkl", "wb") as f:
         pickle.dump(alpha,f)
 
 #####################################

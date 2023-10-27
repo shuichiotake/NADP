@@ -18,16 +18,16 @@ prep.preparation()
 
 # -- load
 
-with open("../Data/ebd_mat.pkl", "rb") as f:
+with open("../noise_gen/data/ebd_mat.pkl", "rb") as f:
     ebd_mat = pickle.load(f)
 
-with open("../Data/num_voc_dict.pkl", "rb") as f:
+with open("../noise_gen/data/num_voc_dict.pkl", "rb") as f:
     num_voc = pickle.load(f)
 
-with open("../Data/voc_num_dict.pkl", "rb") as f:
+with open("../noise_gen/data/voc_num_dict.pkl", "rb") as f:
     voc_num = pickle.load(f)
 
-with open("../Data/top_10.pkl", "rb") as f:
+with open("../noise_gen/data/top_10.pkl", "rb") as f:
     top_10 = pickle.load(f)
 
 # -- definition of parameters
@@ -157,7 +157,7 @@ def Delta(k):
         for j in list(nbd_graph[i][0]):
             voc = num_voc[j]
             voc_Delta[voc] = nbd_graph[i][1]
-    with open("../Data/" + str(s.format(k)) + ".pkl", "wb") as f:
+    with open("../common/" + str(s.format(k)) + ".pkl", "wb") as f:
         pickle.dump(voc_Delta,f)
     print(len(voc_Delta.keys()))
 

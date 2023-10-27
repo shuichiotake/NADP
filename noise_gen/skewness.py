@@ -27,10 +27,10 @@ ut = UT()
 
 # -- load
 
-with open("../Data/ebd_mat.pkl", "rb") as f:
+with open("../noise_gen/data/ebd_mat.pkl", "rb") as f:
     ebd_mat = pickle.load(f)
 
-with open("../Data/top_10.pkl", "rb") as f:
+with open("../noise_gen/data/top_10.pkl", "rb") as f:
     top_10 = pickle.load(f)
 
 # -- definition of functions
@@ -84,12 +84,12 @@ if __name__ == "__main__":
 
 print(result)
 
-with open("../Data/skewness.pkl", "wb") as f:
+with open("../noise_gen/data/skewness.pkl", "wb") as f:
     pickle.dump(result,f)
 
 # -- draw a graph
 
-DIR_root = "../Data/"
+DIR_root = "../noise_gen/data/"
 
 plt.rcParams["font.size"] = 27
 pylab.figure( num=None, figsize=(13, 13) )
