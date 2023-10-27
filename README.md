@@ -12,13 +12,11 @@ Only environment under Anaconda3 (VER:2021.11,PLAT:linux-64) is tested.
  
 # Experiments
 
-1. To make the data set in common
-<br>
+1. To make the data set in common  
    To make the data set in common, please execute the python file neighbourhoods.py in the directory noise_gen.
    The pickle data, alpha_mod.pkl, sigma_mat.pkl, voc_Delta_0.10.pkl, voc_Delta_0.20.pkl, voc_Delta_0.30.pkl, voc_Delta_0.40.pkl, voc_Delta_0.50.pkl will be created in common.  
   
-2. To output the graph of skewness
-<br>
+2. To output the graph of skewness  
    We can create the skewness data of the Jaccard index between the top_10 nearest neibhgour of a word and that of a perturbed word.
    Please excute the python file skewness.py in the directory noise_gen.
    The pickle data skewness.pkl and its graph skewness.png will be created in the directory /noise_gen/data/.  
