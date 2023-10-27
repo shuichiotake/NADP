@@ -1,0 +1,9 @@
+[NOTE]
+The data files "cat9trmsS.pkl" and "cat9trmsS.txt" for Odd Man in this directory are used in the paper, 
+ Spot the Odd Man Out: Exploring the Associative Power of Lexical Resources by Gabriel Stanovsky and Mark Hopkins,
+with some modifications for our experiments.
+The former pickle file is created by the latter text file for convinience, and both are essentially equal.
+
+The data file "vocKebds.pkl" is a dictonary data for embeddings of vocabularies used in the above data.
+For the embeddings, we use the glove model of 42B. 
+(See GloVe: Global Vectors for Word Representation in https://nlp.stanford.edu/projects/glove/)
