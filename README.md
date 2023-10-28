@@ -14,7 +14,7 @@ Only environment under Anaconda3 (VER:2021.11,PLAT:linux-64) is tested.
 
 1. To make the data set in common
 
-   To make the data set in common, please execute the python file neighbourhoods.py in the directory noise_gen.
+   The initial given data are vocKebds_benchmark_TW_73404.pkl and vocs_ebd_dict_10593.pkl. To make the data set in common, please execute the python file neighbourhoods.py in the directory noise_gen.
    The pickle data, alpha_mod.pkl, sigma_mat.pkl, voc_Delta_0.10.pkl, voc_Delta_0.20.pkl, voc_Delta_0.30.pkl, voc_Delta_0.40.pkl, voc_Delta_0.50.pkl will be created in common.  
   
 2. To output the graph of skewness
