@@ -31,9 +31,9 @@ Only environment under Anaconda3 (VER:2021.11,PLAT:linux-64) is tested.
 The first file is for the pickle file "wrdKnrms4S.pkl" in ~~/Data_DS/0_Init, where ~~ means /downStream_oddMan/downStream/.
 For each word, the file gives the norms from the orher words by the ascending order. 
 
-The second file creates the embedding data in ~~/Data_DS/Models for using 'SentEval' (see https://github.com/facebookresearch/SentEval). The created file of the data consists of 73404 lines, and the line has one word at the top and 300 real numbers after that, separeted by the bland. Temporal data for embeddings with noise are created in ~~/Data_DS/1_VocKpebd. 
+The second file creates text files of embedding data in ~~/Data_DS/Models, which are used in the libraly 'SentEval' producing downstream tasks (see https://github.com/facebookresearch/SentEval). The created text file consists of 73404 lines, and each line has one word at the top and 300 real numbers after that, separeted by the bland. Temporal data for embeddings with noise are also created in ~~/Data_DS/1_VocKpebd. 
 
-Note that every file is the test mode in default, and change "onT = True" to "onT = False" in the beginning part of the file for the actual thing.
+Note that the two executable files are on the test mode in default, and change "onT = True" to "onT = False" in the beginning part of the files for the actual thing.
  
 4. To make data for the odd man task
  
