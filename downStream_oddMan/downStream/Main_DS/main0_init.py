@@ -1,7 +1,8 @@
 """
 Create the pickle file "wrdKnrms4S.pkl" in the directory "../Data_DS/0_Init/" for preparation
 Test mode is the default, or onT = True (see the beginning part).
-Change False to True for the actual thing; note that about 10 hours are necessary if onT = False.
+Change False to True for the actual thing; about 5 hours are necessary if onT = False.
+Note that we use 12-threds in the method "ws.m0_create_nhood()", and please modify the parameter 'Prcs' in the method if necessary.
 """
 
 import sys
