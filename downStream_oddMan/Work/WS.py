@@ -1,5 +1,5 @@
 """
-This file gives workspaces for main files in Main_DS.
+This file gives workspaces for main files in downStream/Main_DS and oddMan/Main_OM.
 """
 
 # import
