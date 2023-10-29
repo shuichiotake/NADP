@@ -28,6 +28,7 @@ Only environment under Anaconda3 (VER:2021.11,PLAT:linux-64) is tested.
    We should excute the two files in ~~/Main_DS/:
    - main0_init.py;
    - main1_create.py.
+     
 Here ~~ means /downStream_oddMan/downStream/.
      
 The first file is for the pickle file "wrdKnrms4S.pkl" in ~~/Data_DS/0_Init.
@@ -42,6 +43,7 @@ Note that the two executable files are on the test mode in default, and change "
    We should excute the two files in ~~/Main_OM/:
    - main0_init.py
    - main1_create.py
+     
 Here ~~ means /downStream_oddMan/oddMan/.
   
 The first file is for the pickle file "wrdKnrms4S.pkl" in ~~/Data_OM/0_Init, as in making data of downstream tasks.
