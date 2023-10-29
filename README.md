@@ -24,7 +24,12 @@ Only environment under Anaconda3 (VER:2021.11,PLAT:linux-64) is tested.
    The pickle data skewness.pkl and its graph skewness.png will be created in the directory /noise_gen/data/.  
 
 3. To make data for downstream tasks
-4. To make data for the odd man task
+   We should excute the two files:
+   - ??
+   - ??
+
+ 
+5. To make data for the odd man task
  
 # Authors
  
