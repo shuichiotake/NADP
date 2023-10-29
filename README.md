@@ -25,7 +25,7 @@ Only environment under Anaconda3 (VER:2021.11,PLAT:linux-64) is tested.
 
 3. To make data for downstream tasks
    
-   We should excute the following files in ~~/Main_DS/, where ~~ means /downStream_oddMan/downStream/.
+   We should excute the following files in ~~/Main_DS/, where ~~ means "/downStream_oddMan/downStream/".
    - main0_init.py;
    - main1_create.py. 
      
@@ -38,7 +38,7 @@ Note that the two executable files are on the test mode in default, and change "
  
 4. To make data for the odd man task
 
-   We should excute the following files in ~~/Main_OM/, where ~~ means /downStream_oddMan/oddMan/.
+   We should excute the following files in ~~/Main_OM/, where ~~ means "/downStream_oddMan/oddMan/".
    - main0_init.py;
    - main1_create.py.
   
