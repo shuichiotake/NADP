@@ -29,10 +29,9 @@ class WS:
         self._kaomojis = ["(-_-)","(0_0)","(^_^)","(._.)","(@_@)","(-_-)","(^o^)","(^o^)","(;_;*)","(*;_;)","(\'-\'*)","(;^_^A"]
 
     # ----- for main0_init.py       #HH def wrdKnrms4S(self, vocs_ebd, topK):
-    def m0_create_nhood(self, vocs_ebd, topK):
+    def m0_create_nhood(self, vocs_ebd, topK, Prcs=12):
         vocs,ebds = list(vocs_ebd.keys()),list(vocs_ebd.values())
-        # ----- make argsZ
-        Prcs  = 12 # 15
+        # ----- make argsZ  #Prcs  = 12 # 15
         siz   = int(len(vocs)/Prcs)
         argsS = [ [{ voc:vocs_ebd[voc] for voc in vocs[siz*i:siz*(i+1)] },ebds,topK] for i in range(Prcs+1) ]
         # ----- cal
