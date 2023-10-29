@@ -1,7 +1,8 @@
 """
 Create pickle files for perturbate word embddings (pebd) from the embdding file "vocKebds_benchmark_TW_73404.pkl" in the common directory.
-Please try test mode (for which onT = True below) first; when non-test mode, we need about 3days and 1.5T in HD. 
-The following files are necessary before executing this program:
+Test mode is the default, or onT = True (see the beginning part).
+Change False to True for the actual thing; about 3 days and 1.5T are necessary. 
+The following files should be prepared before executing this program:
 - alpha_mod.pkl
 - sigma_mat.pkl                    
 - voc_Delta_0.10.pkl  
