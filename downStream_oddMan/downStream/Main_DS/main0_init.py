@@ -1,6 +1,7 @@
 """
 Create the pickle file "wrdKnrms4S.pkl" in the directory "../Data_DS/0_Init/" for preparation
-Please try test mode (for which onT = True below) first, because many times are necessary for non-test mode.
+Test mode is the default, or onT = True (see the beginning part).
+Change False to True for the actual thing; note that about 10 hours are necessary if onT = False.
 """
 
 import sys
@@ -15,7 +16,7 @@ import itertools,numpy,os,pickle,time
 #############################################
 ut = UT()
 ws = WS(ut)
-onT = True     # False
+onT = True     # False for the actual thing
 
 def main():
     print("--Start--")      #H timeS = time.time()
