@@ -44,7 +44,6 @@ if onT:     jacs,epss,lbls = jacs[:1],epss[:1],lbls[:1]
 # ----- create temporally files 
 print("create temporally files ...")
 ws.m1_create_NG(wrdKebds,jacs,epss,lbls,onT,typ="OM");print(" NADP,Gaussian done")   # N->NADP,G->Gaussian
-print("EEEE");exit()
 ws.m1_create_J(wrdKebds,jacs,epss,lbls,wrdKnrms4S,onT,typ="OM");print(" Jaccard done")    # J->Jaccard
 ws.m1_create_L(wrdKebds,epss,lbls,onT,typ="OM");print(" Laplacian done")    # L->Laplacian
 #ws.m1_create_M(wrdKebds,epss,lbls,onT,typ="OM");print(" Maharanobis done")    # M->Maharanobis
