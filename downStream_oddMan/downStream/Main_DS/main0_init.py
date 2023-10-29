@@ -32,7 +32,6 @@ def main():
     # ----- create files for norms of neighbourhood of each word
     wrdKnrms4S = ws.m0_create_nhood(wrdKebds,topK)          #HH wrdKnrms4S = pAgt.wrdKnrms4S(wrdKebds_mdl,rad,topK)
     print("@info: #wrd (in result) =", len(wrdKnrms4S))
-    print("eeee");exit()
     # -- dump
     fle = ws._dir_DS_0 + "wrdKnrms4S.pkl"
     if onT:     fle += "_onT"
