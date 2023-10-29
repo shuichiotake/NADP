@@ -16,7 +16,7 @@ import itertools,numpy,os,pickle,time
 #############################################
 ut = UT()
 ws = WS(ut)
-onT = False     # False
+onT = True     # False
 
 def main():
     print("--Start--")      #H timeS = time.time()
