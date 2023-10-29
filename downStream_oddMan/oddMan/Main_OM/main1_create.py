@@ -46,7 +46,7 @@ print("create temporally files ...")
 ws.m1_create_NG(wrdKebds,jacs,epss,lbls,onT,typ="OM");print(" NADP,Gaussian done")   # N->NADP,G->Gaussian
 ws.m1_create_J(wrdKebds,jacs,epss,lbls,wrdKnrms4S,onT,typ="OM");print(" Jaccard done")    # J->Jaccard
 ws.m1_create_L(wrdKebds,epss,lbls,onT,typ="OM");print(" Laplacian done")    # L->Laplacian
-#ws.m1_create_M(wrdKebds,epss,lbls,onT,typ="OM");print(" Maharanobis done")    # M->Maharanobis
+ws.m1_create_M(wrdKebds,epss,lbls,onT,typ="OM");print(" Maharanobis done")    # M->Maharanobis
 timeE = time.time(); sec = int(timeE-timeS); min = (sec // int(60)) % int(60); hour = sec // int(3600);     print("Current Time: (" + str(hour) + "h" + str(min) + "m)")
 # ----- create CWA files
 print("create CWA files ...")
