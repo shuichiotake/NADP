@@ -1,6 +1,8 @@
 """
-Create the pickle file "wrdKnrms4S.pkl" in the directory "../Data_OM/0_Init/" for preparation
-Please try test mode (for which onT = True below) first, because many times are necessary for non-test mode.
+Create the pickle file "wrdKnrms4S.pkl" in the directory "../Data_OM/0_Init/" for preparation.
+Test mode is the default, or onT = True (see the beginning part).
+Change False to True for the actual thing.
+Note that we use 12-threds in the method "ws.m0_create_nhood()", and please modify the parameter 'Prcs' in the method if necessary.
 """
 
 
