@@ -2,7 +2,7 @@
  
 # Introduction
 
-This package makes experimental results in the paper "A Neighbourhood-Aware Differential Privacy Mechanism for Static Word Embeddings".
+This package makes experimental results in the paper [A Neighbourhood-Aware Differential Privacy Mechanism for Static Word Embeddings](https://arxiv.org/abs/2309.10551).
  
 # Requirement
  
