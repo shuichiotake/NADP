@@ -34,7 +34,7 @@ For each word, the file gives the norms from the orher words by the ascending or
 
 The second file creates text files of embedding data in ~~/Data_DS/Models, which are used in the libraly 'SentEval' producing downstream tasks (https://github.com/facebookresearch/SentEval). The created text file consists of 73404 lines, and each line has one word at the top and 300 real numbers after that, separeted by the blank. Temporal data for embeddings with noise are also created in ~~/Data_DS/1_VocKpebd. We give few examples of results of SentEval, whose inputs are the models created by the second file, in ~~/Data_DS/Exs_results_SentEval. 
 
-We explain the graphs in Figure 2 of our paper. The graph (a) uses the mean of the values of the results {'men','simlex','simverb'}; the graph (b) uses the mean of the values of the results {'STS12','STS13','STS14','STS15','STS16'}; and the graph (c) uses the mean of the values of the results {'TR','MR','CR','SUBJ'}. 
+We explain the graphs in Figure 2 of our paper. The graph (a) uses the mean value of the results {'men','simlex','simverb'}; the graph (b) uses the mean value of the results {'STS12','STS13','STS14','STS15','STS16'}; and the graph (c) uses the mean value of the results {'TR','MR','CR','SUBJ'}. 
 
 Note that the two executable files are on the test mode in default, and change "onT = True" to "onT = False" in the beginning part of the files for the actual thing.
  
