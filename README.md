@@ -44,7 +44,7 @@ Note that the two executable files are on the test mode in default, and change "
    - main0_init.py;
    - main1_create.py.
   
-The first file is for the pickle file "wrdKnrms4S.pkl" in ~~/Data_OM/0_Init, as in making data of downstream tasks.
+The first file is for the pickle file "wrdKnrms4S.pkl" in ~~/Data_OM/0_Init, as in making data of downstream tasks, but some wards which appear in the odd man task are added .
 For each word, the file gives the norms from the orher words by the ascending order. 
 
 The second file creates results of odd man tasks in ~~/Data_OM/CWAs; for this, we use data set in the paper "Spot the Odd Man Out: Exploring the Associative Power of Lexical Resources" by Gabriel Stanovsky and Mark Hopkins (https://github.com/gabrielStanovsky/odd-man-out) with some modifications for our experiments, which are stored in ~~/Data_OM/9_FromPaper. The result consists of 3 lines, each line has a character in {'c','w','a'} at the top and its ratio separeted by the blank: 'c' means correct, 'w' means wrong, 'a' means abstained. Temporal data for embeddings with noise are also created in ~~/Data_DS/1_VocKpebd.
