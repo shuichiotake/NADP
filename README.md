@@ -32,9 +32,9 @@ Only environment under Anaconda3 (VER:2021.11,PLAT:linux-64) is tested.
 The first file is for the pickle file "wrdKnrms4S.pkl" in ~~/Data_DS/0_Init.
 For each word, the file gives the norms from the orher words by the ascending order. 
 
-The second file creates text files of embedding data in ~~/Data_DS/Models, which are used in the libraly 'SentEval' producing downstream tasks (https://github.com/facebookresearch/SentEval). The created text file consists of 73404 lines, and each line has one word at the top and 300 real numbers after that, separeted by the blank. Temporal data for embeddings with noise are also created in ~~/Data_DS/1_VocKpebd. 
+The second file creates text files of embedding data in ~~/Data_DS/Models, which are used in the libraly 'SentEval' producing downstream tasks (https://github.com/facebookresearch/SentEval). The created text file consists of 73404 lines, and each line has one word at the top and 300 real numbers after that, separeted by the blank. Temporal data for embeddings with noise are also created in ~~/Data_DS/1_VocKpebd. We give few results of SentEval, whose inputs are the models created by the second file, in ~~/Data_DS/Samples_results. 
 
-We give few results of SentEval, whose inputs are the models created by the second file, in ~~/Data_DS/Samples_results. For the graphs in Figure 2 of our paper, the graph (a) uses the mean of the values of the results {'men','simlex','simverb'}; the graph (b) uses the mean of the values of the results {'STS12','STS13','STS14','STS15','STS16'}; and the graph (c) uses the mean of the values of the results {'TR','MR','CR','SUBJ'}. 
+We explain the graphs in Figure 2 of our paper. The graph (a) uses the mean of the values of the results {'men','simlex','simverb'}; the graph (b) uses the mean of the values of the results {'STS12','STS13','STS14','STS15','STS16'}; and the graph (c) uses the mean of the values of the results {'TR','MR','CR','SUBJ'}. 
 
 Note that the two executable files are on the test mode in default, and change "onT = True" to "onT = False" in the beginning part of the files for the actual thing.
  
@@ -48,6 +48,8 @@ The first file is for the pickle file "wrdKnrms4S.pkl" in ~~/Data_OM/0_Init, as 
 For each word, the file gives the norms from the orher words by the ascending order. 
 
 The second file creates results of odd man tasks in ~~/Data_OM/CWAs; for this, we use data set in the paper "Spot the Odd Man Out: Exploring the Associative Power of Lexical Resources" by Gabriel Stanovsky and Mark Hopkins (https://github.com/gabrielStanovsky/odd-man-out) with some modifications for our experiments, which are stored in ~~/Data_OM/9_FromPaper. The result consists of 3 lines, each line has a character in {'c','w','a'} at the top and its ratio separeted by the blank: 'c' means correct, 'w' means wrong, 'a' means abstained. Temporal data for embeddings with noise are also created in ~~/Data_DS/1_VocKpebd.
+
+The graph (d) in Figure 2 directly uses the results in ~~/Data_OM/CWAs.
 
 Note that the two executable files are on the test mode in default, and change "onT = True" to "onT = False" in the beginning part of the files for the actual thing.
  
