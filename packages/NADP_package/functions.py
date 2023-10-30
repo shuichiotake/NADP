@@ -69,5 +69,11 @@ def jac_pre_dist_analytic_gaussian(voc, para, alpha, knd, top_k, vocs_norms):
         sd = -pow(dist,-l_2/2 )*math.log(jac)
     return sd
 
-
+def Mahalanobis(para, sigma_mat):
+    X = np.random.normal(0,1,300)
+    N = np.reshape(X/np.linalg.norm(X),(300,1))
+    Y = np.random.gamma(300,1/para)
+    Z = Y*np.dot(sigma_mat,N)
+    noise_vec = np.ravel(Z)
+    return noise_vec
 

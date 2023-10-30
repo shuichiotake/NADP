@@ -105,7 +105,7 @@ def perturb(k,para,i):
         per_vec = np.random.laplace(0,151.7991981/para,300)
     if k == "M":
         np.random.seed(9*(50*i + residue[para])+8)
-        per_vec = ut.Mahalanobis(para,sigma_mat)
+        per_vec = func.Mahalanobis(para,sigma_mat)
     return ((para, i), per_vec)
 
 def summarize(W, para):
